@@ -1,35 +1,46 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: #f0f0f0; /* Set your desired background color */
+    font-family: Arial, sans-serif; /* Set your desired font-family */
+}
+
+.main-section {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%; /* Occupies 50% of the section */
+    background-image: url('background-image.jpg'); /* Set the background image URL */
+    background-size: cover;
+    background-position: center;
+    z-index: -1; /* Place it behind the content */
 }
 
 .centered-text {
     text-align: center;
-}
-
-.profile-photo {
-    text-align: center;
-    margin-bottom: 20px;
+    z-index: 1; /* Place it in front of the background image */
 }
 
 .profile-photo img {
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
-    border-radius: 50%; /* Makes the image circular */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
     border: 5px solid transparent;
+    background-clip: content-box;
     background-image: linear-gradient(135deg, #4e67eb, #6e2fa6);
-    -webkit-background-clip: padding-box; /* Apply the gradient inside the border */
-    background-clip: padding-box; /* Apply the gradient inside the border */
 }
 
 .centered-text h1 {
     font-size: 2.5em;
-    margin-top: 0; /* Reset the margin */
+    margin-top: 0;
     margin-bottom: 20px;
     background: linear-gradient(135deg, #4e67eb, #6e2fa6);
     -webkit-background-clip: text;
