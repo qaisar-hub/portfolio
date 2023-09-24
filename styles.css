@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; /* Set your desired background color */
+}
+
+.centered-text {
+    text-align: center;
+}
+
+.centered-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    background: linear-gradient(135deg, #4e67eb, #6e2fa6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.centered-text p {
+    font-size: 1.5em;
+}
