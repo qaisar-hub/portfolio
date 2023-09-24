@@ -1,14 +1,15 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0; /* Set your desired background color */
-    font-family: Arial, sans-serif; /* Set your desired font-family */
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
 }
 
 .main-section {
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center; /* Center both horizontally and vertically */
     height: 100vh;
 }
 
@@ -17,16 +18,16 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%; /* Occupies 50% of the section */
-    background-image: url('background-image.png'); /* Set the background image URL */
+    height: 50%;
+    background-image: url('background-image.jpg');
     background-size: cover;
     background-position: center;
-    z-index: -1; /* Place it behind the content */
+    z-index: -1;
 }
 
 .centered-text {
     text-align: center;
-    z-index: 1; /* Place it in front of the background image */
+    z-index: 1;
 }
 
 .profile-photo img {
